@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap" rel="stylesheet">
+	<title>Add Movie</title>
+</head>
+<style type="text/css">
+
+	body{
+		margin-left: 50px;
+		background-color: #ffeaa7;
+	}
+
+	form{
+		color:#ff4757;
+		font-size:25px;
+		font-family: 'Lora', serif;
+	}
+
+	h1{
+		font-size:40px;
+		color:#5352ed;
+		font-family: 'Playfair Display', serif;
+		font-family: bold;
+	}
+
+	#submit{
+	font-size: 20px;
+	background-color: #ff7675;
+	margin-bottom: 15px;
+	color: white;
+	width: 10%;
+	border-radius: 20px;
+	margin-left: 0px;
+	border: 2px  #ff7675 solid;
+	padding: 7px;
+	}
+
+	#submit:hover{
+	background-color:#3c40c6;
+	cursor: pointer;
+	border: 2px  #3c40c6 solid;
+
+	}
+</style>
+
+<body>
+
+	<h1 style="font-size=30px;">Add Movie</h1>
+
+	<form action="/insert" method="POST">
+		<label>Movie Name :</label><br>
+		<input type="text" name="name" placeholder="Enter Movie Name" required=""><br><br>
+
+		<label>Actor :</label><br>
+		<input type="text" name="actor" placeholder="Enter Actor Name" required=""><br><br>
+
+		<label>Year :</label><br>
+		<input type="text" name="year" placeholder="Enter year" required=""><br><br>
+
+		<label>Poster :</label><br>
+		<input type="url" name="poster" placeholder="Enter Poster" required=""><br><br>
+
+		<input type="submit" name="" id="submit">
+
+	</form>
+
+</body>
+
+</html>
